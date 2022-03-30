@@ -1,6 +1,5 @@
 import turtle
 import random
-import time
 
 t = turtle.Pen()
 u = turtle.Pen()
@@ -144,28 +143,28 @@ vd.right(90)
 ve.right(90)
 vf.right(90)
 
-print("Please be patient. Seeds take time to grow.")
+print("Take the time to go into fullscreen mode now.")
 
-ta.forward(210)
-tb.forward(170)
-tc.forward(130)
-td.forward(90)
-te.forward(50)
-tf.forward(10)
+ta.forward(150)
+tb.forward(70)
+tc.forward(-10)
+td.forward(-90)
+te.forward(-170)
+tf.forward(-250)
 
-ua.forward(210)
-ub.forward(170)
-uc.forward(130)
-ud.forward(90)
-ue.forward(50)
-uf.forward(10)
+ua.forward(150)
+ub.forward(70)
+uc.forward(-10)
+ud.forward(-90)
+ue.forward(-170)
+uf.forward(-250)
 
-va.forward(210)
-vb.forward(170)
-vc.forward(130)
-vd.forward(90)
-ve.forward(50)
-vf.forward(10)
+va.forward(150)
+vb.forward(70)
+vc.forward(-10)
+vd.forward(-90)
+ve.forward(-170)
+vf.forward(-250)
 
 ta.right(90)
 tb.left(90)
@@ -190,21 +189,246 @@ vf.left(90)
 
 print("What color do you think the saplings will be? ")
 
-for i in range(1,281):
+ta.down()
+tb.down()
+tc.down()
+td.down()
+te.down()
+tf.down()
+
+ua.down()
+ub.down()
+uc.down()
+ud.down()
+ue.down()
+uf.down()
+
+va.down()
+vb.down()
+vc.down()
+vd.down()
+ve.down()
+vf.down()
+
+
+for i in range(1,581):
     t.forward(1)
     u.forward(1)
     v.forward(1)
-    if i % 40 == 10:
-        j = int((i - 10)/40)
+    if i % 80 == 20 and i != 20:
+        j = int((i - 20)/80)
+
         if j == 1:
             k = random.randint(1,99)
             l = k % 3
             if l == 0:
-                ta.forward(20)
+                ta.forward(35)
             elif l == 1:
-                ta.forward(25)
+                ta.forward(50)
             else:
-                ta.forward(30)
+                ta.forward(65)
+            k = random.randint(1,99)
+            l = k % 3
+            if l == 0:
+                ua.forward(35)
+            elif l == 1:
+                ua.forward(50)
+            else:
+                ua.forward(65)
+            k = random.randint(1,99)
+            l = k % 3
+            if l == 0:
+                va.forward(35)
+            elif l == 1:
+                va.forward(50)
+            else:
+                va.forward(65)
+            m = 5
+            for i in range(1,50):
+                ta.forward(m)
+                ta.left(15)
+                ua.forward(m)
+                ua.left(15)
+                va.forward(m)
+                va.left(15)
+                m = m - 0.1
+
+        elif j == 2:
+            k = random.randint(1,99)
+            l = k % 3
+            if l == 0:
+                tb.forward(35)
+            elif l == 1:
+                tb.forward(50)
+            else:
+                tb.forward(65)
+            k = random.randint(1,99)
+            l = k % 3
+            if l == 0:
+                ub.forward(35)
+            elif l == 1:
+                ub.forward(50)
+            else:
+                ub.forward(65)
+            k = random.randint(1,99)
+            l = k % 3
+            if l == 0:
+                vb.forward(35)
+            elif l == 1:
+                vb.forward(50)
+            else:
+                vb.forward(65)
+            m = 5
+            for i in range(1,50):
+                tb.forward(m)
+                tb.right(15)
+                ub.forward(m)
+                ub.right(15)
+                vb.forward(m)
+                vb.right(15)
+                m = m - 0.1
+            
+        elif j == 3:
+            k = random.randint(1,99)
+            l = k % 3
+            if l == 0:
+                tc.forward(35)
+            elif l == 1:
+                tc.forward(50)
+            else:
+                tc.forward(65)
+            k = random.randint(1,99)
+            l = k % 3
+            if l == 0:
+                uc.forward(35)
+            elif l == 1:
+                uc.forward(50)
+            else:
+                uc.forward(65)
+            k = random.randint(1,99)
+            l = k % 3
+            if l == 0:
+                vc.forward(35)
+            elif l == 1:
+                vc.forward(50)
+            else:
+                vc.forward(65)
+            m = 5
+            for i in range(1,50):
+                tc.forward(m)
+                tc.left(15)
+                uc.forward(m)
+                uc.left(15)
+                vc.forward(m)
+                vc.left(15)
+                m = m - 0.1
+
+        elif j == 4:
+            k = random.randint(1,99)
+            l = k % 3
+            if l == 0:
+                td.forward(35)
+            elif l == 1:
+                td.forward(50)
+            else:
+                td.forward(65)
+            k = random.randint(1,99)
+            l = k % 3
+            if l == 0:
+                ud.forward(35)
+            elif l == 1:
+                ud.forward(50)
+            else:
+                ud.forward(65)
+            k = random.randint(1,99)
+            l = k % 3
+            if l == 0:
+                vd.forward(35)
+            elif l == 1:
+                vd.forward(50)
+            else:
+                vd.forward(65)
+            m = 5
+            for i in range(1,50):
+                td.forward(m)
+                td.right(15)
+                ud.forward(m)
+                ud.right(15)
+                vd.forward(m)
+                vd.right(15)
+                m = m - 0.1
+            
+        elif j == 5:
+            k = random.randint(1,99)
+            l = k % 3
+            if l == 0:
+                te.forward(35)
+            elif l == 1:
+                te.forward(50)
+            else:
+                te.forward(65)
+            k = random.randint(1,99)
+            l = k % 3
+            if l == 0:
+                ue.forward(35)
+            elif l == 1:
+                ue.forward(60)
+            else:
+                ue.forward(65)
+            k = random.randint(1,99)
+            l = k % 3
+            if l == 0:
+                ve.forward(35)
+            elif l == 1:
+                ve.forward(50)
+            else:
+                ve.forward(65)
+            m = 5
+            for i in range(1,50):
+                te.forward(m)
+                te.left(15)
+                ue.forward(m)
+                ue.left(15)
+                ve.forward(m)
+                ve.left(15)
+                m = m - 0.1
+
+        elif j == 6:
+            k = random.randint(1,99)
+            l = k % 3
+            if l == 0:
+                tf.forward(35)
+            elif l == 1:
+                tf.forward(50)
+            else:
+                tf.forward(65)
+            k = random.randint(1,99)
+            l = k % 3
+            if l == 0:
+                uf.forward(35)
+            elif l == 1:
+                uf.forward(50)
+            else:
+                uf.forward(65)
+            k = random.randint(1,99)
+            l = k % 3
+            if l == 0:
+                vf.forward(35)
+            elif l == 1:
+                vf.forward(50)
+            else:
+                vf.forward(65)
+            m = 5
+            for i in range(1,50):
+                tf.forward(m)
+                tf.right(15)
+                uf.forward(m)
+                uf.right(15)
+                vf.forward(m)
+                vf.right(15)
+                m = m - 0.1 
+        else:
+            print("Error. Please refresh.")
             
 
 
