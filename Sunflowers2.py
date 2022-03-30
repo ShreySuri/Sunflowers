@@ -1,4 +1,6 @@
 import turtle
+import random
+import time
 
 t = turtle.Pen()
 u = turtle.Pen()
@@ -144,48 +146,65 @@ vf.right(90)
 
 print("Please be patient. Seeds take time to grow.")
 
-ta.forward(10)
-tb.forward(50)
-tc.forward(90)
-td.forward(130)
-te.forward(170)
-tf.forward(210)
+ta.forward(210)
+tb.forward(170)
+tc.forward(130)
+td.forward(90)
+te.forward(50)
+tf.forward(10)
 
-ua.forward(10)
-ub.forward(50)
-uc.forward(90)
-ud.forward(130)
-ue.forward(170)
-uf.forward(210)
+ua.forward(210)
+ub.forward(170)
+uc.forward(130)
+ud.forward(90)
+ue.forward(50)
+uf.forward(10)
 
-va.forward(10)
-vb.forward(50)
-vc.forward(90)
-vd.forward(130)
-ve.forward(170)
-vf.forward(210)
+va.forward(210)
+vb.forward(170)
+vc.forward(130)
+vd.forward(90)
+ve.forward(50)
+vf.forward(10)
 
-ta.right(180)
-tb.right(180)
-tc.right(180)
-td.right(180)
-te.right(180)
-tf.right(180)
+ta.right(90)
+tb.left(90)
+tc.right(90)
+td.left(90)
+te.right(90)
+tf.left(90)
 
-ua.right(180)
-ub.right(180)
-uc.right(180)
-ud.right(180)
-ue.right(180)
-uf.right(180)
+ua.right(90)
+ub.left(90)
+uc.right(90)
+ud.left(90)
+ue.right(90)
+uf.left(90)
 
-va.right(180)
-vb.right(180)
-vc.right(180)
-vd.right(180)
-ve.right(180)
-vf.right(180)
+va.right(90)
+vb.left(90)
+vc.right(90)
+vd.left(90)
+ve.right(90)
+vf.left(90)
 
 print("What color do you think the saplings will be? ")
+
+for i in range(1,281):
+    t.forward(1)
+    u.forward(1)
+    v.forward(1)
+    if i % 40 == 10:
+        j = int((i - 10)/40)
+        if j == 1:
+            k = random.randint(1,99)
+            l = k % 3
+            if l == 0:
+                ta.forward(20)
+            elif l == 1:
+                ta.forward(25)
+            else:
+                ta.forward(30)
+            
 
 
