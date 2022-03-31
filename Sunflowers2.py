@@ -1,5 +1,6 @@
 import turtle
 import random
+import time
 
 t = turtle.Pen()
 u = turtle.Pen()
@@ -209,6 +210,34 @@ vc.down()
 vd.down()
 ve.down()
 vf.down()
+
+t.pencolor("green")
+t.width(3)
+u.pencolor("green")
+u.width(3)
+v.pencolor("green")
+v.width(3)
+
+ta.pencolor("green")
+tb.pencolor("green")
+tc.pencolor("green")
+td.pencolor("green")
+te.pencolor("green")
+tf.pencolor("green")
+
+ua.pencolor("green")
+ub.pencolor("green")
+uc.pencolor("green")
+ud.pencolor("green")
+ue.pencolor("green")
+uf.pencolor("green")
+
+va.pencolor("green")
+vb.pencolor("green")
+vc.pencolor("green")
+vd.pencolor("green")
+ve.pencolor("green")
+vf.pencolor("green")
 
 
 for i in range(1,581):
