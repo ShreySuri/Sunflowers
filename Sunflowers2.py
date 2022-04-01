@@ -5,6 +5,16 @@ t = turtle.Pen()
 u = turtle.Pen()
 v = turtle.Pen()
 
+t_flower = turtle.Pen()
+t_flower.hideturtle()
+t_flower.up()
+u_flower = turtle.Pen()
+u_flower.hideturtle()
+u_flower.up()
+v_flower = turtle.Pen()
+v_flower.hideturtle()
+v_flower.up()
+
 t.hideturtle()
 u.hideturtle()
 v.hideturtle()
@@ -397,7 +407,42 @@ for i in range(1,50):
     vf.forward(m)
     vf.right(15)
     m = m - 0.1
+
+# Flowers need to generate as follows:
+# T: (-200,330)
+# U: (0,330)
+# V: (200,330)
+
     
-            
+t_flower.forward(-200)
+t_flower.left(90)
+t_flower.forward(330)
+u_flower.left(90)
+u_flower.forward(330)
+v_flower.forward(200)
+v_flower.left(90)
+v_flower.forward(330)
+
+
+t_flower.pencolor = ("brown")
+u_flower.pencolor = ("brown")
+v_flower.pencolor = ("brown")
+
+for n in range (1,26):
+    t_flower.width = (3*n)
+    u_flower.width = (3*n)
+    v_flower.width = (3*n)
+    t_flower.down()
+    u_flower.down()
+    v_flower.down()
+    t_flower.forward(1)
+    u_flower.forward(1)
+    v_flower.forward(1)
+    t_flower.up()
+    u_flower.up()
+    v_flower.up()
+    t_flower.forward(-1)
+    u_flower.forward(-1)
+    v_flower.forward(-1)
 
 
