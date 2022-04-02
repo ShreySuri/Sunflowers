@@ -15,14 +15,14 @@ v_flower = turtle.Pen()
 v_flower.hideturtle()
 v_flower.up()
 
-t_petals = Turtle.Pen
+t_petals = turtle.Pen()
+t_petals.hideturtle()
+t_petals.up()
+u_petals = turtle.Pen()
 u_petals.hideturtle()
-v_petals.up()
-t_petals = Turtle.Pen
-u_petals.hideturtle()
-v_petals.up()
-t_petals = Turtle.Pen
-u_petals.hideturtle()
+u_petals.up()
+v_petals = turtle.Pen()
+v_petals.hideturtle()
 v_petals.up()
 
 t.hideturtle()
@@ -455,5 +455,56 @@ for i in range (1,76):
     u_flower.forward(-1)
     v_flower.forward(-1)
 
+t_flower.width(75)
+u_flower.width(75)
+v_flower.width(75)
+# Petals start at these co-ordinates:
+# T: (-200,330)
+# U: (0,330)
+# V: (200,330)
 
+t_petals.forward(-233)
+t_petals.left(90)
+t_petals.forward(369)
+t_petals.right(90)
+u_petals.forward(-33)
+u_petals.left(90)
+u_petals.forward(369)
+u_petals.right(90)
+v_petals.forward(169)
+v_petals.left(90)
+v_petals.forward(369)
+v_petals.right(90)
+
+t_petals.pencolor("yellow")
+u_petals.pencolor("yellow")
+v_petals.pencolor("yellow")
+t_petals.fillcolor("yellow")
+u_petals.fillcolor("yellow")
+v_petals.fillcolor("yellow")  
+
+t_petals.begin_fill()
+u_petals.begin_fill()
+v_petals.begin_fill()
+
+for i in range (1,10):
+    t_petals.forward(66)
+    t_petals.right(80)
+for i in range (1,10):
+    u_petals.forward(66)
+    u_petals.right(80)
+for i in range (1,10):
+    v_petals.forward(66)
+    v_petals.right(80)
+
+t_petals.end_fill()
+u_petals.end_fill()
+v_petals.end_fill()
+
+t_flower.down()
+u_flower.down()
+v_flower.down()
+t_flower.forward(1)
+u_flower.forward(1)
+v_flower.forward(1)
 
