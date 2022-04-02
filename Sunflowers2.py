@@ -36,6 +36,7 @@ v.right(90)
 v.forward(300)
 v.right(180)
 v.down()
+v.pencolor("brown")
 v.forward(600)
 v.right(180)
 v.forward(100)
@@ -458,6 +459,7 @@ for i in range (1,76):
 t_flower.width(75)
 u_flower.width(75)
 v_flower.width(75)
+
 # Petals start at these co-ordinates:
 # T: (-200,330)
 # U: (0,330)
