@@ -15,6 +15,16 @@ v_flower = turtle.Pen()
 v_flower.hideturtle()
 v_flower.up()
 
+t_petals = Turtle.Pen
+u_petals.hideturtle()
+v_petals.up()
+t_petals = Turtle.Pen
+u_petals.hideturtle()
+v_petals.up()
+t_petals = Turtle.Pen
+u_petals.hideturtle()
+v_petals.up()
+
 t.hideturtle()
 u.hideturtle()
 v.hideturtle()
@@ -444,4 +454,6 @@ for i in range (1,76):
     t_flower.forward(-1)
     u_flower.forward(-1)
     v_flower.forward(-1)
+
+
 
