@@ -428,13 +428,13 @@ t_flower.pencolor = ("brown")
 u_flower.pencolor = ("brown")
 v_flower.pencolor = ("brown")
 
-for n in range (1,26):
-    t_flower.width = (3*n)
-    u_flower.width = (3*n)
-    v_flower.width = (3*n)
+for i in range (1,76):
     t_flower.down()
     u_flower.down()
     v_flower.down()
+    t_flower.width(i)
+    u_flower.width(i)
+    v_flower.width(i)
     t_flower.forward(1)
     u_flower.forward(1)
     v_flower.forward(1)
@@ -444,5 +444,4 @@ for n in range (1,26):
     t_flower.forward(-1)
     u_flower.forward(-1)
     v_flower.forward(-1)
-
 
